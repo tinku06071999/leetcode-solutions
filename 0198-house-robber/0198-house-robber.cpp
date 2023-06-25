@@ -10,13 +10,25 @@ public:
    
   // }
   // with memoization
-  int solve(int idx,vector<int>&nums,vector<int>&dp){
-      if(idx==0) return nums[0];
-      if(idx<0) return 0;
-      if(dp[idx]!= -1)return dp[idx];
-      int pick = nums[idx]+solve(idx-2,nums,dp);
-      int notPick = 0+solve(idx-1,nums,dp);
-      dp[idx]= max(pick,notPick);
+//   int solve(int idx,vector<int>&nums,vector<int>&dp){
+//       if(idx==0) return nums[0];
+//       if(idx<0) return 0;
+//       if(dp[idx]!= -1)return dp[idx];
+//       int pick = nums[idx]+solve(idx-2,nums,dp);
+//       int notPick = 0+solve(idx-1,nums,dp);
+//       dp[idx]= max(pick,notPick);
+//       return dp[idx];
+//   }
+  // tabulation 
+  int solve(int idx, vector<int>&nums, vector<int>&dp){
+      dp[0]=nums[0];
+      int neg = 0;
+      for(int i=1;i<nums.size();i++){
+          int pick = nums[i];
+          if(i>1)pick += dp[i-2];
+          int notPick = 0+dp[i-1];
+          dp[i] = max(pick, notPick);
+      }
       return dp[idx];
   }
     int rob(vector<int>& nums) {
