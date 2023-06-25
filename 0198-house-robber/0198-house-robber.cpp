@@ -20,17 +20,17 @@ public:
 //       return dp[idx];
 //   }
   // tabulation 
-  int solve(int idx, vector<int>&nums, vector<int>&dp){
-      dp[0]=nums[0];
-      int neg = 0;
-      for(int i=1;i<nums.size();i++){
-          int pick = nums[i];
-          if(i>1)pick += dp[i-2];
-          int notPick = 0+dp[i-1];
-          dp[i] = max(pick, notPick);
-      }
-      return dp[idx];
-  }
+  // int solve(int idx, vector<int>&nums, vector<int>&dp){
+  //     dp[0]=nums[0];
+  //     int neg = 0;
+  //     for(int i=1;i<nums.size();i++){
+  //         int pick = nums[i];
+  //         if(i>1)pick += dp[i-2];
+  //         int notPick = 0+dp[i-1];
+  //         dp[i] = max(pick, notPick);
+  //     }
+  //     return dp[idx];
+  // }
     int rob(vector<int>& nums) {
         int n =nums.size();
     //     int i=0;
@@ -47,7 +47,20 @@ public:
     // }
     //  return max(prefix,suffix);
 
-     vector<int>dp(n,-1);
-      return solve(n-1,nums,dp);
+      // return solve(n-1,nums,dp);
+
+      int prev = nums[0];
+        int prev2=0;
+        int ans=0;
+        for(int i=1;i<n;i++){
+            int pick = nums[i];
+            if(i>1)pick+=prev2;
+            int notpick = prev;
+            ans = max(pick,notpick);
+            prev2 = prev;
+            prev = ans;
+            
+        }
+        return prev;
     }
 };
