@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isPalindrome(int x) {
         long long int k=x;
-       long long int rev=0,rem=0;
+       long long  rev=0,rem=0;
    
        if(x<0)return false;
        if(x>=0 && x<10 ) return true;
