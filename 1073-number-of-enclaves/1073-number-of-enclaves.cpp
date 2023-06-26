@@ -15,7 +15,7 @@ public:
         int m = grid[0].size();
         int delrow[] = {-1,0,+1,0};
         int delcol[] = {0,+1,0,-1};
-        // vector<vector<int>>vis(n,vector<int>(m,0));
+      
         for(int i=0;i<m;i++){  // for the traversal of first and last  row
             if(grid[0][i]==1){
                 dfs(0,i,grid,delrow,delcol,n,m);
