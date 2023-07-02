@@ -24,15 +24,15 @@ public:
 
         // second solution
 
-        unordered_map<ListNode*,int>mp;
+        set<ListNode*>st;
         ListNode* temp = head;
         int i=0;
         while(temp){
-            if(mp.find(temp)!=mp.end()){
+            if(st.find(temp)!=st.end()){
                 return temp;
             }
             else{
-                mp.insert({temp,i});
+                st.insert(temp);
                 i++;
             }
             temp = temp->next;
