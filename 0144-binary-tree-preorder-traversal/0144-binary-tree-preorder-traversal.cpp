@@ -18,9 +18,23 @@ public:
       solve(v,root->right);
   }
     vector<int> preorderTraversal(TreeNode* root) {
-       vector<int>v;
-       solve(v,root);
-       return v;
-        
+    //    vector<int>v;
+    //    solve(v,root);
+    //    return v;
+    
+
+    // iterative solution
+      vector<int>ans;
+      if(root==NULL)return ans;
+      stack<TreeNode*>st;
+      st.push(root);
+      while(!st.empty()){
+          TreeNode* temp = st.top();
+          st.pop();
+          if(temp->right)st.push(temp->right);
+          if(temp->left)st.push(temp->left);
+          ans.push_back(temp->val);
+      }
+         return ans;
     }
 };
