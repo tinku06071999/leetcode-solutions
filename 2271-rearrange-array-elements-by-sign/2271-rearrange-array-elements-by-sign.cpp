@@ -29,7 +29,7 @@ public:
                 int idx = 2*countpos-2;
                 v[idx] = nums[i];
             }
-            else if(nums[i]<0){
+            else{
                 countneg++;
                 int idx = 2*countneg-1;
                 v[idx] = nums[i];
