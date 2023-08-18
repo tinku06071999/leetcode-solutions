@@ -11,10 +11,15 @@ public:
             {
                 s=mid+1;
             }
+            else if(nums[s]==nums[mid] && nums[mid]==nums[e]){
+                s = s+1;
+                e = e-1;
+            }
             else
             {
                 e=mid;
             }
+            
             mid=s+(e-s)/2;
         }
         return s;
@@ -23,7 +28,7 @@ public:
         int s=0,e = nums.size()-1;
         int mid = s+(e-s)/2;
         int pivot = pivotidx(nums);
-        cout<<pivot<<endl;
+        // cout<<pivot<<endl;
         if(nums[e] == target)return e;
         if(nums[s]==target)return s;
         if(nums[pivot]<=target && target<=nums[e]){
