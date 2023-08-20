@@ -31,12 +31,13 @@ public:
       int e = m*n-1;
       int mid = (s+e)/2;
       while(s<=e){
-          mid = (s+e)/2;
+          
           int row = mid / n ;
           int col = mid % n;
           if(matrix[row][col]==target)return true;
           else if(matrix[row][col] > target) e = mid-1;
           else s = mid+1;
+          mid = (s+e)/2;
       }
       return false;
     }
