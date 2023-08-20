@@ -37,7 +37,6 @@ public:
           if(matrix[row][col]==target)return true;
           else if(matrix[row][col] > target) e = mid-1;
           else s = mid+1;
-          mid = (s+e)/2;
       }
       return false;
     }
