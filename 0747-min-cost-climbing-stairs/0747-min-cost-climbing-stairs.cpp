@@ -15,11 +15,29 @@ public:
 
         return min(f,s);
         // dp[n]=0;
-        for(int i=n-1;i>=0;i--){
-            int one = cost[i] + dp[i-1];
-            int two = cost[i] + dp[i-2];
-            dp[i] = min(one,two);
+
+        // second approach
+
+        // for(int i=n-1;i>=0;i--){
+        //     int one = cost[i] + dp[i-1];
+        //     int two = cost[i] + dp[i-2];
+        //     dp[i] = min(one,two);
+        // }
+        // return dp[n-1];
+
+        // third approach
+        int ans = INT_MAX;
+        int curr=0;
+        int prev=0;
+        int prev2=0;
+        for(int i=0;i<n;i++){
+            curr = cost[i];
+            int one = curr + prev;
+            int two = curr + prev2;
+            ans = min(one ,two);
+            prev2 = prev;
+            prev = curr;
         }
-        return dp[n-1];
+        return ans;
     }
 };
