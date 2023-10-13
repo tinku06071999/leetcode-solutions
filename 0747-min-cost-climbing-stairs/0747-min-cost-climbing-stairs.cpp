@@ -15,9 +15,11 @@ public:
 
         return min(f,s);
         // dp[n]=0;
-        // for(int i=0;i<n;i++){
-            
-        // }
-        // return dp[n-1];
+        for(int i=n-1;i>=0;i--){
+            int one = cost[i] + dp[i-1];
+            int two = cost[i] + dp[i-2];
+            dp[i] = min(one,two);
+        }
+        return dp[n-1];
     }
 };
