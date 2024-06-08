@@ -11,21 +11,14 @@
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
-        ListNode* fast = head;
+        
+        if(!head)head;
         ListNode* slow = head;
-        // if(!fast->next->next)return slow;
-        int cnt=0;
-        while(slow){
-            cnt++;
-            slow=slow->next;
-        }
-        slow = head;
-        cnt /=2;
-        while(cnt){
-            cout<<"i am in the loop"<<endl;
+        ListNode* fast = head;
+        
+        while(fast && fast->next){
             slow = slow->next;
             fast = fast->next->next;
-            cnt--;
         }
         return slow;
     }
