@@ -5,7 +5,7 @@ public:
         int mini = prices[0];
         int profit = 0;
 
-        for(int i=0;i<n;i++){
+        for(int i=1;i<n;i++){
            int cost = prices[i] - mini;
            profit = max(profit, cost);
            mini = min(prices[i], mini);
