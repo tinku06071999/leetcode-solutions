@@ -19,23 +19,14 @@ public:
     }
     int solve(TreeNode* root){
         if(!root)return 0;
-        int left = solve(root->left);
+        int left =  solve(root->left);
         if(left == -1)return -1;
         int right = solve(root->right);
         if(right==-1)return -1;
-        return (abs(left-right) <= 1) ? max(left,right) +1 : -1;
+        return (abs(left-right) <= 1) ? max(left,right) + 1 : -1;
     }
     bool isBalanced(TreeNode* root) {
         if(!root)return true;
-        // return solve(root) != -1;
-        
-        int left = height(root->left);
-        int right = height(root->right);
-
-        if(abs(left-right) <= 1){
-            if(isBalanced(root->left) && isBalanced(root->right))
-            return true;
-        }
-        return false;
+        return solve(root) != -1;
     }
 };
