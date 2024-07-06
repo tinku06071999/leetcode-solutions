@@ -29,4 +29,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/tinku06071999/leetcode-solutions/tree/master/0102-binary-tree-level-order-traversal) |
+## Array
+|  |
+| ------- |
+| [0054-spiral-matrix](https://github.com/tinku06071999/leetcode-solutions/tree/master/0054-spiral-matrix) |
+## Matrix
+|  |
+| ------- |
+| [0054-spiral-matrix](https://github.com/tinku06071999/leetcode-solutions/tree/master/0054-spiral-matrix) |
+## Simulation
+|  |
+| ------- |
+| [0054-spiral-matrix](https://github.com/tinku06071999/leetcode-solutions/tree/master/0054-spiral-matrix) |
 <!---LeetCode Topics End-->
