@@ -12,7 +12,8 @@ public:
                 mp[s[j++]]--;
                 count--;
             }
+            maxi = max(maxi, count);
         }
-        return maxi = max(maxi, count);
+        return maxi;
     }
 };
