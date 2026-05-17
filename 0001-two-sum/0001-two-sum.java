@@ -6,7 +6,7 @@ class Solution {
        for(int i =0;i<len;i++){
          int diff = target - nums[i];
          if(mp.containsKey(diff)){
-            return new int[]{mp.get(diff), i};
+            return new int[]{ i, mp.get(diff)};
          }
          mp.put(nums[i],i);
        }
