@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0026-remove-duplicates-from-sorted-array](https://github.com/tinku06071999/leetcode-solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0033-search-in-rotated-sorted-array](https://github.com/tinku06071999/leetcode-solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0054-spiral-matrix](https://github.com/tinku06071999/leetcode-solutions/tree/master/0054-spiral-matrix) |
+| [0073-set-matrix-zeroes](https://github.com/tinku06071999/leetcode-solutions/tree/master/0073-set-matrix-zeroes) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/tinku06071999/leetcode-solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0229-majority-element-ii](https://github.com/tinku06071999/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/tinku06071999/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
@@ -56,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/tinku06071999/leetcode-solutions/tree/master/0054-spiral-matrix) |
+| [0073-set-matrix-zeroes](https://github.com/tinku06071999/leetcode-solutions/tree/master/0073-set-matrix-zeroes) |
 ## Simulation
 |  |
 | ------- |
@@ -65,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/tinku06071999/leetcode-solutions/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/tinku06071999/leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0073-set-matrix-zeroes](https://github.com/tinku06071999/leetcode-solutions/tree/master/0073-set-matrix-zeroes) |
 | [0229-majority-element-ii](https://github.com/tinku06071999/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [0349-intersection-of-two-arrays](https://github.com/tinku06071999/leetcode-solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0496-next-greater-element-i](https://github.com/tinku06071999/leetcode-solutions/tree/master/0496-next-greater-element-i) |
