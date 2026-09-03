@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0004-median-of-two-sorted-arrays](https://github.com/tinku06071999/leetcode-solutions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/tinku06071999/leetcode-solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0033-search-in-rotated-sorted-array](https://github.com/tinku06071999/leetcode-solutions/tree/master/0033-search-in-rotated-sorted-array) |
+| [0039-combination-sum](https://github.com/tinku06071999/leetcode-solutions/tree/master/0039-combination-sum) |
 | [0054-spiral-matrix](https://github.com/tinku06071999/leetcode-solutions/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/tinku06071999/leetcode-solutions/tree/master/0073-set-matrix-zeroes) |
 | [0118-pascals-triangle](https://github.com/tinku06071999/leetcode-solutions/tree/master/0118-pascals-triangle) |
@@ -123,4 +124,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0229-majority-element-ii](https://github.com/tinku06071999/leetcode-solutions/tree/master/0229-majority-element-ii) |
 | [1217-relative-sort-array](https://github.com/tinku06071999/leetcode-solutions/tree/master/1217-relative-sort-array) |
+## Backtracking
+|  |
+| ------- |
+| [0039-combination-sum](https://github.com/tinku06071999/leetcode-solutions/tree/master/0039-combination-sum) |
 <!---LeetCode Topics End-->
